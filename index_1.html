@@ -2,15 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box {
+            width: 100px; height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 10px; top: 10px;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
     <script>
-
+        $(document).ready(function () {
+            $('.box').click(function () {
+                $(this).animate({
+                    left: 1000 
+                }, 5000);
+                $(this).animate({
+                    top: 1000 
+                }, 1000);
+            });
+        });
     </script>
 </head>
 <body>
-    <h1>Hello express</h1>
-    <h2>My name is {{ user }}</h2>
+    <div class="box"></div>
 </body>
 </html>

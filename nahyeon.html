@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>innerHTML 활용</title>
 <script>
-function change() {
-var p = document.getElementById("firstP");
-p.innerHTML= "나의 <img src='안지영.png'> 가수";
+    function calculateSumRange(start, end) {
+    start = Math.min(start, end);
+    end = Math.max(start, end);
+    let total = 0;
+    for (let i = start; i <= end; i++) {
+        total += i;
+    }
+    return total;
 }
+
+const startNum = parseInt(prompt("첫 번째 숫자를 입력하세요: "));
+const endNum = parseInt(prompt("두 번째 숫자를 입력하세요: "));
+const result = calculateSumRange(startNum, endNum);
+console.log(`${startNum}부터 ${endNum}까지의 합은 ${result}입니다.`);
 </script>
-</head>
-<body>
-<h3>innerHTML 활용 : 아래 글자에 클릭하면
-제가 좋아하는 가수가 보입니다.</h3>
-<hr>
-<p id="firstP" style="color:blue"
-onclick="change()">
-여기에<span style="color:red">클릭하세요</span>
-</p>
-</body>
-</html>

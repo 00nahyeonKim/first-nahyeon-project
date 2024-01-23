@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Location</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 페이지</title>
     <script>
-        setInterval(function() {
-            location = 'http://hanbit.co.kr';
-        }, 3000);
+        window.onload = function () {
+            const header = document.getElementById('header');
+            header.innerHTML = '<i>i 태그입니다</i><br />';
+            header.textContent = '<i>i 태그입니다.</i>';
+        }
     </script>
 </head>
 <body>
-
+    <h1 id = "header">Header</h1>
 </body>
 </html>

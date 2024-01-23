@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-1.7.min.js" ></script>
+</head>
+<script>
+    $.getJSON("https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline",
+     function(data) {
+        var id = data[0].id;
+        var brand = data[0].brand;
+        var price = data[0].price;
+        var created_at = data[0].created_at;
+        var image_link2 = data[2].image_link;
+        var image_link3 = data[3].image_link;
+        var image_link4 = data[4].image_link;
+
+        $(".id").append(id);
+      $(".brand").append(brand);
+      $(".price").append(price);
+      $(".created_at").append(created_at);
+      $(".image_link").append(
+        '<img src="' + image_link2 + '"/>'
+      );
+      $(".image_link").append(
+        '<img src="' + image_link3 + '"/>'
+      );
+      $(".image_link").append(
+        '<img src="' + image_link4 + '"/>'
+      );
+    });
+</script>
+<body>
+<h1>20203002 김나현</h1>
+<div class="id">id: </div>
+<div class="brand">브랜드: </div>
+<div class="price">가격: </div>
+<div class="created_at">created_at: </div>
+<div class="image_link">사진 : </div>
+</body>
+</html>
+
+

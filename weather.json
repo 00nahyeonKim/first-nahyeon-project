@@ -1,0 +1,37 @@
+{
+  "coord": { "lon": 128.6811, "lat": 35.2281 },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 281.99,
+    "feels_like": 281.99,
+    "temp_min": 281.08,
+    "temp_max": 281.99,
+    "pressure": 1020,
+    "humidity": 46,
+    "sea_level": 1020,
+    "grnd_level": 1017
+  },
+  "visibility": 10000,
+  "wind": { "speed": 0.66, "deg": 258, "gust": 0.8 },
+  "clouds": { "all": 63 },
+  "dt": 1701678929,
+  "sys": {
+    "type": 1,
+    "id": 8086,
+    "country": "KR",
+    "sunrise": 1701641856,
+    "sunset": 1701677588
+  },
+  "timezone": 32400,
+  "id": 1846326,
+  "name": "Changwon",
+  "cod": 200
+}
